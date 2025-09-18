@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guachi"
+version = "0.0.6"
+description = "Global, persistent configurations as dictionaries"
+authors = [
+    { name = "Alfredo Deza", email = "alfredodeza@gmail.com" }
+]
+readme = "README.rst"
+license = { file = "LICENSE" }
+requires-python = ">=3.7,<4"
+keywords = ["configuration", "management", "persistent", "dictionaries", "dictionary", "parse", "map", "mapping"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Software Development :: Build Tools",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12"
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["guachi"]
+include-package-data = true
