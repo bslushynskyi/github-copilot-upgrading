@@ -1,3 +1,5 @@
+# config should be run by pyproject.toml
+
 from setuptools import setup
 setup(
     name="guachi",
